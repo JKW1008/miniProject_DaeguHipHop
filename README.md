@@ -1,1 +1,1 @@
-# miniProject_DaeguHipHop
+# DaeguHiphop

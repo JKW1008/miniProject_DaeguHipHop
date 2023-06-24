@@ -1,0 +1,153 @@
+#artist {
+  width: 100%;
+  padding: 10% 5%;
+  margin-top: 10%;
+}
+
+#artist .title_image {
+  width: 100%;
+}
+
+#artist .title_image img {
+  width: 40%;
+}
+
+#artist .artist_wrapper {
+  width: 100%;
+  place-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(50%, auto);
+  grid-gap: 20px;
+}
+
+#artist .artist_wrapper .artist_pic {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#artist .artist_wrapper .artist_pic p {
+  font-size: 2em;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+.date {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.date img {
+  width: 25%;
+}
+/* button style */
+.button_wrap {
+  width: 100%;
+  padding: 8% 0;
+  text-align: center;
+}
+
+.btn-14 {
+  width: 120px;
+  height: 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+  outline: none;
+  background: #fecd10;
+  border-radius: 5px;
+
+  border: none;
+  z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  #artist {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5% 5%;
+  }
+  #artist .title_image img {
+    width: 30%;
+  }
+  .btn-14 {
+    width: 200px;
+    height: 60px;
+    font-size: 1.8em;
+  }
+  #artist .artist_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #artist .artist_wrapper {
+    gap: 60px;
+  }
+  #artist .artist_wrapper .artist_pic p {
+    font-size: 2.3em;
+  }
+
+  #artist {
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  .button_wrap {
+    padding: 0;
+    padding-top: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn-14:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #ff9a03;
+    background-image: linear-gradient(315deg, #e8a302 0%, #ff9a03 74%);
+    transition: all 0.3s ease;
+  }
+  .btn-14:hover {
+    color: #f2f2f2;
+  }
+  .btn-14:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .btn-14:active {
+    top: 2px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #artist .artist_wrapper {
+    gap: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #artist {
+    padding: 0;
+  }
+
+  #artist .artist_wrapper .artist_pic p {
+    font-weight: 680;
+    font-size: 3em;
+  }
+}

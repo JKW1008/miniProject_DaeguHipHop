@@ -1,0 +1,129 @@
+#instagram {
+  width: 100%;
+  padding: 10% 5%;
+  background-color: #f2f2f2;
+}
+
+#instagram h2 {
+  color: #0d0d0d;
+  text-decoration: underline;
+  margin-bottom: 60px;
+}
+.instagram_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.instagram_contents {
+  place-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+.instagram_contents div {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram_contents div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.insta_button_wrap {
+  width: 100%;
+  padding: 8% 0;
+  text-align: center;
+}
+.insta_button_wrap .insButton {
+  width: 120px;
+  height: 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  background: #0d0d0d;
+  border-radius: 5px;
+  border: none;
+  z-index: 0;
+  color: #f2f2f2;
+}
+
+@media screen and (min-width: 768px) {
+  #instagram {
+    padding: 6% 5%;
+  }
+  .instagram_contents {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .insta_button_wrap .insButton {
+    width: 200px;
+    height: 60px;
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 960px) {
+  #instagram {
+    padding: 4% 5%;
+  }
+  .instagram_contents {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #instagram h2 {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .insButton:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #ff9a03;
+    background-image: linear-gradient(315deg, #e8a302 0%, #ff9a03 74%);
+
+    transition: all 0.3s ease;
+  }
+
+  .insButton:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .insButton:active {
+    top: 2px;
+  }
+
+  .insta_button_wrap .insButton:hover {
+    color: #0d0d0d;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #instagram {
+    padding: 4% 5%;
+  }
+  .instagram_contents {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  #instagram {
+    padding: 4% 0;
+  }
+  .instagram_contents {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

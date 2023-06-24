@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대구힙합페스티벌</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/artist.css" />
+    <link rel="stylesheet" href="./css/instagram.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div id="header_Container">
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/daeguhiphop" target="_blank"
+                  >INSTAGRAM</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@daeguhiphop" target="_blank"
+                  >YOUTUBE</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/daeguro/?locale=ko_KR"
+                  target="_blank"
+                  >FACEBOOK</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://smartstore.naver.com/daeguhiphop"
+                  target="_blank"
+                  >STORE</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">SIGN IN</a>
+              </li>
+              <li>
+                <a href="#">SIGN UP</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="pc_ImageContainer">
+            <img
+              src="images/Header/logo.png"
+              alt="mainimage_header"
+              width="60px"
+            />
+          </div>
+          <nav id="lnb">
+            <ul>
+              <li>
+                <a href="#artist">ARTIST</a>
+              </li>
+              <li>
+                <a href="#instagram">SNS</a>
+              </li>
+              <li>
+                <a href="#map">MAP</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="header_ImageContainer">
+          <img
+            src="images/Header/logo.png"
+            alt="mainimage_header"
+            width="60px"
+            id="toggleLogo"
+          />
+
+          <!-- toggle -->
+          <input type="checkbox" id="menuicon" />
+          <label for="menuicon" id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <!-- toggle_menu -->
+          <div class="sidebar">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/daeguhiphop" target="_blank"
+                  >INSTAGRAM</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@daeguhiphop" target="_blank"
+                  >YOUTUBE</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/daeguro/?locale=ko_KR"
+                  target="_blank"
+                  >FACEBOOK</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://smartstore.naver.com/daeguhiphop"
+                  target="_blank"
+                  >STORE</a
+                >
+              </li>
+              <li>
+                <a href="#">SIGN IN</a>
+              </li>
+              <li>
+                <a href="#">SIGN UP</a>
+              </li>
+              <li>
+                <a href="#artist">ARTIST</a>
+              </li>
+              <li>
+                <a href="#instagram">SNS</a>
+              </li>
+              <li>
+                <a href="#map">MAP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <video
+        src="./video/header_background_video.mp4"
+        loop
+        autoplay
+        muted
+      ></video>
+      <div id="artist">
+        <div class="title_image">
+          <img src="images/titles/artist.png" />
+        </div>
+        <div id="sat" class="date">
+          <img src="./images/date/0506.png" alt="" />
+        </div>
+        <div class="artist_wrapper">
+          <div class="artist_pic">
+            <img src="./images/main/giriboy.jpg" alt="" width="100%" />
+            <p>Giriboy</p>
+          </div>
+
+          <div class="artist_pic">
+            <img src="./images/main/reelamarz.jpg" alt="" width="100%" />
+            <p>Reallamarz</p>
+          </div>
+
+          <div class="artist_pic">
+            <img src="./images/main/ashisland.jpg" alt="" width="100%" />
+            <p>Ash Island</p>
+          </div>
+
+          <div class="artist_pic">
+            <img src="./images/main/thequiett.jpg" alt="" width="100%" />
+            <p>The Quiett</p>
+          </div>
+        </div>
+        <div id="sun" class="date">
+          <img src="./images/date/0507.png" alt="" />
+        </div>
+        <div class="artist_wrapper">
+          <div class="artist_pic">
+            <img src="images/main/bewhy.jpg" alt="" width="100%" />
+            <p>BewhY</p>
+          </div>
+          <div class="artist_pic">
+            <img src="images/main/zico.jpg" alt="" width="100%" />
+            <p>Zico</p>
+          </div>
+          <div class="artist_pic">
+            <img src="images/main/dprlive.jpg" alt="" width="100%" />
+            <p>DPR LIVE</p>
+          </div>
+          <div class="artist_pic">
+            <img src="images/main/bignaughty.jpg" alt="" width="100%" />
+            <p>Big Naughty</p>
+          </div>
+        </div>
+        <div class="button_wrap">
+          <button class="custom-btn btn-14">MORE</button>
+        </div>
+      </div>
+      <div id="instagram">
+        <div class="instagram_wrapper">
+          <h2>INSTAGRAM</h2>
+          <div class="instagram_contents"></div>
+          <div class="insta_button_wrap">
+            <button class="custom-btn insButton" id="showMoreButton">
+              MORE
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="Map_outerWrap">
+        <div id="Map_innerWrap">
+          <div class="title_image">
+            <img src="images/titles/map.png" alt="MapTitle" />
+          </div>
+          <div id="map"></div>
+          <div class="button_wrap">
+            <button class="custom-btn btn-14">TICKETS</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div id="footer_inner">
+          <div class="text_wrapper">
+            <p>
+              Copyright. Since 2013, Daegu hiphop festival Organizing committee
+              All rights reserved.
+            </p>
+            <p>
+              T. OOOO-OOOO (Sat-Sun 11:30am-10:30pm) Email. daeguhipfe@gmail.com
+            </p>
+          </div>
+          <div class="footer_under">
+          <div class="text_wrapper">
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div id="footer_logoWrap">
+            <div class="sns_logo">
+              <a href="https://www.instagram.com/daeguhiphop/" target="_blank">
+                <img src="./images/footer/insta.png" alt="insta" width="60px" />
+              </a>
+              <a href="https://www.youtube.com/@daeguhiphop" target="_blank">
+                <img
+                  src="./images/footer/youtube.png"
+                  alt="youtube"
+                />
+              </a>
+              <a
+                href="https://smartstore.naver.com/daeguhiphop"
+                target="_blank"
+              >
+                <img
+                  src="./images/footer/naver.png"
+                  alt="naverstore"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/daeguro/?locale=ko_KR"
+                target="_blank"
+              >
+                <img
+                  src="./images/footer/facebook.png"
+                  alt="facebook"
+                />
+              </a>
+            </div>
+            <div class="footerLogo">
+              <a href="#">
+                <img src="./images/footer/logo.png" alt="logo" width="254px" />
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+      <script src="./js/web_scroll_toggle.js"></script>
+      <script src="./js/insta.js"></script>
+      <script
+        type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d1c120272607911068ab33e6b86cf33d"
+      ></script>
+      <script src="./js/KakaoMap.js"></script>
+    </main>
+  </body>
+</html>

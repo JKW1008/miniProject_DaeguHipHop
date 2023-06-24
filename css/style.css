@@ -1,0 +1,40 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  background: url("../images/background/background.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 360px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  font-size: 3em;
+  color: #919191;
+  text-align: center;
+  margin: 5%;
+  font-weight: bold;
+}

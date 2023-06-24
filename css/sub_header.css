@@ -1,0 +1,73 @@
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/background/artist_table.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header_Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+}
+nav {
+  width: 100%;
+  height: 35px;
+  padding: 0 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  color: #fff;
+  transition: color 0.5s ease; /* 색상 변화에 대한 transition 설정 */
+  font-size: 1.1em;
+}
+
+nav a:after {
+  /*after 가상요소*/
+  display: block;
+  /*a요소를 블록 요소라고 선언*/
+  width: 100%;
+  /*카테고리 메뉴 밑줄의 크기를 동일하게 주기 위해 width 설정*/
+  /*혹시 동일하지 않길 바란다면 width 삭제*/
+  content: "";
+  border-bottom: solid 2px #888;
+  transform: scaleX(0);
+  /*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+  transition: transform 0.4s ease-in-out;
+  /*변형 방식*/
+}
+
+nav a:after {
+  transform-origin: 0% 50%;
+}
+
+nav a:hover:after {
+  transform: scaleX(1); /*a 속성에 hover시 기존 크기로*/
+}
+
+nav a:hover {
+  color: #888;
+}
+#header_ImageContainer {
+  display: flex;
+  justify-content: center;
+  top: 0;
+}
+
+#lnb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #919191;
+}

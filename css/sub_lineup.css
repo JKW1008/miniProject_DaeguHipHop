@@ -1,0 +1,11 @@
+#lineup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date a {
+  color: #fecf00;
+  text-decoration: underline;
+  font-size: 3.75rem;
+}

@@ -1,0 +1,250 @@
+header {
+  background: #000;
+}
+
+header #header_Container {
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
+header #header_ImageContainer {
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  top: 0;
+  z-index: 5;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease;
+}
+header #header_Container nav {
+  display: none;
+}
+header #pc_ImageContainer {
+  display: none;
+}
+header #header_ImageContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 24px;
+}
+/* toggle effect */
+input[id="menuicon"] {
+  display: none;
+}
+input[id="menuicon"] + label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+input[id="menuicon"] + label span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  border-radius: 5px;
+  background: #fecd10;
+  transition: all 0.35s;
+}
+input[id="menuicon"] + label span:nth-child(1) {
+  top: 0;
+  width: 100%;
+}
+input[id="menuicon"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
+}
+input[id="menuicon"] + label span:last-child {
+  bottom: 0;
+  width: 40%;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  background-color: #000;
+  z-index: 4;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(2) {
+  display: none;
+}
+input[id="menuicon"]:checked + label span:nth-child(3) {
+  width: 100%;
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+  background-color: #000;
+  z-index: 4;
+}
+
+/* toggle menu */
+div[class="sidebar"] {
+  width: 60%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 182, 0, 1) 60%,
+    rgba(212, 155, 23, 0.4) 100%
+  );
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 3;
+  transition: all 0.6s;
+  overflow: scroll;
+}
+div[class="sidebar"]::-webkit-scrollbar {
+  display: none;
+}
+input[id="menuicon"]:checked + label + div {
+  right: 0;
+}
+.sidebar {
+  display: flex;
+  justify-content: start;
+  padding-top: 48px;
+}
+.sidebar ul li {
+  display: block;
+  padding: 10px 30px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.sidebar ul li a {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+video {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  div[class="sidebar"] {
+    width: 40%;
+  }
+  video {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  video {
+    width: 100%;
+  }
+  main {
+    position: relative;
+  }
+  header {
+    width: 100%;
+    background-color: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  header #header_Container nav {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+  }
+  header #header_Container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  header #header_Container #gnb {
+    padding: 0 2%;
+    z-index: 0;
+  }
+  header #header_Container #gnb ul:first-child li {
+    margin-right: 12px;
+  }
+  header #header_Container #gnb ul:last-child li {
+    margin-left: 12px;
+  }
+  header #header_Container #lnb {
+    justify-content: center;
+    padding: 0;
+    /* margin-bottom: 24px; */
+  }
+  header #header_Container #lnb ul li {
+    margin: 0 24px;
+  }
+  header #header_Container nav li a {
+    color: white;
+    cursor: pointer; /* 링크로 동작하도록 커서 속성 추가 */
+    text-decoration: none;
+  }
+  header #header_Container nav li a:hover {
+    color: gray;
+  }
+  header #header_Container nav li a:after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px gray;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: 0% 50%;
+  }
+  header #header_Container nav li a:hover:after {
+    transform: scaleX(1);
+  }
+
+  #header_ImageContainer img {
+    display: block;
+  }
+  header #pc_ImageContainer {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 24px 0;
+  }
+  header #pc_ImageContainer img {
+    width: 12%;
+  }
+  .sidebar ul li:hover {
+    scale: 1.1;
+  }
+  .sidebar ul li a:hover {
+    color: #fff;
+  }
+  .sidebar ul li a:after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px white;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: 0% 50%;
+  }
+  .sidebar ul li a:hover:after {
+    transform: scaleX(1);
+  }
+}
+@media screen and (max-width: 1025px) {
+  header #header_Container #gnb {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header #header_Container #gnb {
+    padding: 0;
+  }
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  div[class="sidebar"] {
+    width: 20%;
+  }
+}

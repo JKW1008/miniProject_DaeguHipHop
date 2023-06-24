@@ -1,0 +1,96 @@
+footer {
+  background-color: #f2f2f2;
+  padding: 10% 5%;
+}
+.text_wrapper {
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #1b1b19;
+
+  line-height: 1.7;
+  text-align: center;
+}
+.footer_under .text_wrapper {
+  padding-top: 5%;
+}
+.sns_logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+.sns_logo a {
+  margin: 12px;
+}
+.sns_logo a img {
+  width: 60px;
+}
+.footerLogo {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+#footer_inner {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  #footer_inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer_logoWrap {
+    display: flex;
+    align-items: flex-end;
+  }
+  .sns_logo {
+    width: 50%;
+    text-align: start;
+    padding: 0;
+  }
+  .sns_logo a {
+    margin: 0;
+    margin-right: 12px;
+  }
+  .footerLogo {
+    width: 50%;
+    text-align: end;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 5%;
+  }
+  .footer_under {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_under .text_wrapper {
+    padding-top: 2%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .text_wrapper {
+    text-align: start;
+  }
+  #footer_logoWrap {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer_logoWrap .sns_logo {
+    display: flex;
+    justify-content: start;
+  }
+  #footer_logoWrap .sns_logo a img {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 3% 0;
+  }
+}
