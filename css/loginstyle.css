@@ -1,0 +1,35 @@
+#loginformouterWrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#loginformouterWrap div {
+  margin: auto;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 3px solid #fecd10;
+  padding: 20px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+.in {
+  margin-bottom: 20px;
+}
+
+#btn {
+  background-color: #fecd10;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #9b9b9b;
+  font-size: 12px;
+}
