@@ -1,0 +1,107 @@
+header {
+  position: inherit;
+  background-color: black;
+}
+body {
+  background: #eee;
+}
+main {
+  background-color: #eee;
+}
+#galleryWrap {
+  background-color: #eee;
+  padding: 10% 5%;
+  margin-top: 15%;
+  border-bottom: 0.7px solid #ddd;
+}
+#galleryWrap h2 {
+  color: #0d0d0d;
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 3em;
+}
+#gallery {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+#gallery div {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#gallery div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.insta_button_wrap {
+  width: 100%;
+  padding: 8% 0;
+  text-align: center;
+}
+.insta_button_wrap .insButton {
+  width: 120px;
+  height: 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  background: #0d0d0d;
+  border-radius: 5px;
+  border: none;
+  z-index: 0;
+  color: #f2f2f2;
+}
+@media screen and (min-width: 480px) {
+  #galleryWrap {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #galleryWrap {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+  #galleryWrap h2 {
+    font-size: 4em;
+  }
+  #gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .insta_button_wrap .insButton {
+    width: 200px;
+    height: 60px;
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #galleryWrap {
+    margin-top: 0;
+  }
+
+  #gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  #galleryWrap {
+    padding: 0;
+  }
+
+  #gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

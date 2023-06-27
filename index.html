@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
     <title>대구힙합페스티벌</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/artist.css" />
     <link rel="stylesheet" href="./css/instagram.css" />
     <link rel="stylesheet" href="./css/map.css" />
+    <link rel="stylesheet" href="./css/pay.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
@@ -43,7 +44,13 @@
                 >
               </li>
             </ul>
+            <div id="year">
+              <p>2023</p>
+            </div>
             <ul>
+              <li>
+                <a href="#">TICKETS</a>
+              </li>
               <li>
                 <a href="login.html">SIGN IN</a>
               </li>
@@ -64,13 +71,13 @@
           <nav id="lnb">
             <ul>
               <li>
-                <a href="#artist">ARTIST</a>
+                <a href="program.html">PROGRAM</a>
               </li>
               <li>
-                <a href="#instagram">SNS</a>
+                <a href="gallery.html">GALLERY</a>
               </li>
               <li>
-                <a href="#map">MAP</a>
+                <a href="information.html">INFORMATION</a>
               </li>
             </ul>
           </nav>
@@ -126,13 +133,16 @@
                 <a href="#">SIGN UP</a>
               </li>
               <li>
-                <a href="#artist">ARTIST</a>
+                <a href="#">TICKETS</a>
               </li>
               <li>
-                <a href="#instagram">SNS</a>
+                <a href="#artist">PROGRAM</a>
               </li>
               <li>
-                <a href="#map">MAP</a>
+                <a href="#instagram">GALLERY</a>
+              </li>
+              <li>
+                <a href="#map">INFORMATION</a>
               </li>
             </ul>
           </div>
@@ -149,7 +159,7 @@
           <img src="images/titles/artist.png" />
         </div>
         <div id="sat" class="date">
-          <img src="./images/date/0506.png" alt="" />
+          <img src="./images/date/newsat.png" alt="" />
         </div>
         <div class="artist_wrapper">
           <div class="artist_pic">
@@ -173,7 +183,7 @@
           </div>
         </div>
         <div id="sun" class="date">
-          <img src="./images/date/0507.png" alt="" />
+          <img src="./images/date/newsun.png" alt="" />
         </div>
         <div class="artist_wrapper">
           <div class="artist_pic">
@@ -194,8 +204,8 @@
           </div>
         </div>
         <div class="button_wrap">
-          <a href="./sub_lineup.html">
-            <button class="custom-btn btn-14">MORE</button>
+          <a href="/program.html">
+            <button class="custom-btn btn-14">DETAIL</button>
           </a>
         </div>
       </div>
@@ -216,8 +226,38 @@
             <img src="images/titles/map.png" alt="MapTitle" />
           </div>
           <div id="map"></div>
+          <div id="id">
+            <h2>
+              도로명 : 대구광역시 수성구 유니버시아드로42길 139<br />지번 :
+              대구광역시 수성구 대흥동 산3
+            </h2>
+          </div>
           <div class="button_wrap">
-            <button class="custom-btn btn-14">TICKETS</button>
+            <button class="custom-btn btn-14">DETAIL</button>
+          </div>
+        </div>
+      </div>
+      <div id="gotoPay">
+        <div id="PayWrap">
+          <div id="choice">
+            <input type="radio" name="day" id="firstday" value="1" />
+            <input type="radio" name="day" id="secondday" value="2" />
+            <input type="radio" name="day" id="everyday" value="3" checked />
+            <label for="firstday"
+              >23.05.06<br />
+              <p>(69,000₩)</p></label
+            >
+            <label for="secondday"
+              >23.05.07<br />
+              <p>(69,000₩)</p></label
+            >
+            <label for="everyday"
+              >ALL<br />
+              <p>(130,000₩)</p></label
+            >
+          </div>
+          <div id="payButton">
+            <button>TICKETS</button>
           </div>
         </div>
       </div>
@@ -280,6 +320,7 @@
         </div>
       </footer>
       <script src="./js/web_scroll_toggle.js"></script>
+      <script src="./js/webScrollpay.js"></script>
       <script src="./js/insta.js"></script>
       <script
         type="text/javascript"

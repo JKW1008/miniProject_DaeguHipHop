@@ -1,13 +1,26 @@
 header {
-  background-color: transparent;
+  background: #fff;
 }
 
+header #header_Container {
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
+header #header_ImageContainer {
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  top: 0;
+  z-index: 5;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease;
+}
 header #header_Container nav {
   display: none;
 }
 header #pc_ImageContainer {
   display: none;
-  background-color: transparent;
 }
 header #header_ImageContainer {
   display: flex;
@@ -134,12 +147,11 @@ video {
   }
   header {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     display: flex;
     justify-content: center;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(2px);
   }
 
   header #header_Container nav {
@@ -159,6 +171,14 @@ video {
   header #header_Container #gnb {
     padding: 0 2%;
     z-index: 0;
+    position: relative;
+  }
+  #year {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.1em;
   }
   header #header_Container #gnb ul:first-child li {
     margin-right: 12px;
@@ -166,6 +186,7 @@ video {
   header #header_Container #gnb ul:last-child li {
     margin-left: 12px;
   }
+
   header #header_Container #lnb {
     justify-content: center;
     padding: 0;
@@ -173,19 +194,22 @@ video {
   }
   header #header_Container #lnb ul li {
     margin: 0 24px;
+    color: white;
   }
   header #header_Container nav li a {
     color: white;
     cursor: pointer; /* 링크로 동작하도록 커서 속성 추가 */
     text-decoration: none;
+    display: inline-block;
   }
-  header #header_Container nav li a:hover {
-    color: gray;
+  header #header_Container nav ul li a:hover {
+    color: #fbb81b;
+    transform: scale(1.2);
   }
   header #header_Container nav li a:after {
     display: block;
     content: "";
-    border-bottom: solid 3px gray;
+    border-bottom: solid 3px #fbb81b;
     transform: scaleX(0);
     transition: transform 0.4s ease-in-out;
     transform-origin: 0% 50%;

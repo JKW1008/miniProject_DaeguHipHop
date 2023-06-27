@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/loginHeader.css" />
-    <link rel="stylesheet" href="./css/loginFooter.css" />
-    <link rel="stylesheet" href="./css/loginstyle.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
   </head>
   <body>
     <main>
@@ -59,7 +57,7 @@
             </ul>
           </nav>
           <div id="pc_ImageContainer">
-            <a href="/index.html">
+            <a href="./index.html">
               <img
                 src="images/Header/logo.png"
                 alt="mainimage_header"
@@ -82,7 +80,7 @@
           </nav>
         </div>
         <div id="header_ImageContainer">
-          <a href="/index.html">
+          <a href="./index.html">
             <img
               src="images/Header/logo.png"
               alt="mainimage_header"
@@ -147,23 +145,13 @@
           </div>
         </div>
       </header>
-      <div id="loginformouterWrap">
-        <div>
-          <form action="">
-            <input type="text" placeholder="아이디" class="in" />
-            <input type="password" placeholder="비밀번호" class="in" />
-            <a href="index.html">
-              <input type="button" id="btn" value="로그인" />
-            </a>
-          </form>
-          <a href="#">비밀번호를 잊어버리셨나요?</a>
-          <div id="kakao">
-            <a href="javascript:kakaoLogin();"
-              ><img src="./images/login/kakao_login.png"
-            /></a>
-          </div>
+      <section id="galleryWrap">
+        <h2>GALLERY</h2>
+        <div id="gallery"></div>
+        <div class="insta_button_wrap">
+          <button class="custom-btn insButton" id="showMoreButton">MORE</button>
         </div>
-      </div>
+      </section>
       <footer>
         <div id="footer_inner">
           <div class="text_wrapper">
@@ -210,16 +198,19 @@
               </div>
               <div class="footerLogo">
                 <a href="#">
-                  <img src="./images/footer/logo.png" alt="logo" />
+                  <img
+                    src="./images/footer/logo.png"
+                    alt="logo"
+                    width="254px"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </footer>
+      <script src="./js/web_scroll_toggle.js"></script>
+      <script src="./js/gallery.js"></script>
     </main>
-    <script src="./js/web_scroll_toggle.js"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script src="./js/kakaplog.js"></script>
   </body>
 </html>

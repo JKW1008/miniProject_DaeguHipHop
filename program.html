@@ -2,16 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>대구힙합페스티벌</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/loginHeader.css" />
-    <link rel="stylesheet" href="./css/loginFooter.css" />
-    <link rel="stylesheet" href="./css/loginstyle.css" />
   </head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/lineup.css" />
+  <link rel="stylesheet" href="./css/timetable.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
   <body>
     <main>
       <header>
@@ -59,7 +57,7 @@
             </ul>
           </nav>
           <div id="pc_ImageContainer">
-            <a href="/index.html">
+            <a href="./index.html">
               <img
                 src="images/Header/logo.png"
                 alt="mainimage_header"
@@ -82,7 +80,7 @@
           </nav>
         </div>
         <div id="header_ImageContainer">
-          <a href="/index.html">
+          <a href="./index.html">
             <img
               src="images/Header/logo.png"
               alt="mainimage_header"
@@ -147,23 +145,92 @@
           </div>
         </div>
       </header>
-      <div id="loginformouterWrap">
-        <div>
-          <form action="">
-            <input type="text" placeholder="아이디" class="in" />
-            <input type="password" placeholder="비밀번호" class="in" />
-            <a href="index.html">
-              <input type="button" id="btn" value="로그인" />
-            </a>
-          </form>
-          <a href="#">비밀번호를 잊어버리셨나요?</a>
-          <div id="kakao">
-            <a href="javascript:kakaoLogin();"
-              ><img src="./images/login/kakao_login.png"
-            /></a>
+      <div id="sub_lineup">
+        <div class="sub_wrapper">
+          <div id="lineUplogo">
+            <img src="./images/titles/lineup.png" alt="" />
+          </div>
+          <div class="date">
+            <h2>05.06(SAT)</h2>
+          </div>
+          <div class="date_text">
+            <p>The Quiett • Paloalto • skinny Brown • JAEHA• Gist</p>
+            <p>ASH ISLAND • LEELLAMARZ • Paul Blanco • DON MALIK</p>
+            <p>
+              Swings • Giriboy • 한요한 • Black Nut • Kid Mili • Yang Hong Won •
+              DAMINI
+            </p>
+            <p>
+              SUPERBEE • UNEDUCATED KID • HOMIES • Royal44 • LIL GIMCHI • KHAN •
+              OXYNOVA
+            </p>
+            <p>JUSTHIS • LEE YOUNG JI • Kik5o • 한국사람</p>
+            <p>NSW yoon • 허성현 • Fleeky Bang • Polodared • HOST DJ SKIIDA</p>
+            <p>
+              Zeebra from JAPAN • OPENMIC Winner SIKBOY • 공기소년 x ChestWoney
+            </p>
+          </div>
+          <div class="date">
+            <h2>05.07(SUN)</h2>
+          </div>
+          <div class="date_text">
+            <p>ZICO • BewhY • B.I • REDDY • DPR LIVE</p>
+            <p>Loco • GRAY • Woo Won Jae • Coogie • Big Naughty</p>
+            <p>
+              IIIBOI • TAKEWON • BE'O • Kim Seungmin • Layone • 안병웅 •Khakii
+            </p>
+            <p>Mirani • Blase • Chillin Homie • Roh Yun Ha • GOISBACK</p>
+            <p>
+              NAVYL1NE (DAM1NOISE, DOYUN, jay glock, KImDan,, SoM4TANG,
+              YOUNGHWAN)
+            </p>
+            <p>HOST DJ SKIIDA</p>
           </div>
         </div>
       </div>
+
+      <div id="sub_timetable">
+        <div class="sub_wrapper">
+          <div class="timetable_img">
+            <img src="./images/titles/timetable.png" alt="" />
+          </div>
+          <div id="buttonWrap">
+            <button
+              id="button1"
+              onclick="toggleButton(1)"
+              style="color: #fecf00"
+            >
+              05.06 (SAT)
+            </button>
+            <button id="button2" onclick="toggleButton(2);" style="color: #fff">
+              05.07 (SUN)
+            </button>
+          </div>
+
+          <div id="content1" style="display: block">
+            <img src="./images/sub_image/sat_time.png" alt="" />
+          </div>
+          <div id="content2" style="display: none">
+            <img src="./images/sub_image/Sun-time.png" alt="" />
+          </div>
+          <div id="menual">
+            <ul>
+              <li>공연시간은 당일 사정에 따라 변동이 있을 수 있음.</li>
+              <li>
+                공연은 우천과 상관 없이 진행 (심각한 천재지변의 경우 사전
+                공지함)
+              </li>
+              <li>
+                출연진은 발표한 라인업 모두 출연하나, 천재지변이나 피치못할
+                사정, 코로나 감염 등 아티스트의 사정, 주최 측 사정에 따라 출연자
+                일부 변경될 수 있으며, 이는 페스티벌 특성상 취소⋅환불사유가 될
+                수 없음.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <footer>
         <div id="footer_inner">
           <div class="text_wrapper">
@@ -209,8 +276,12 @@
                 </a>
               </div>
               <div class="footerLogo">
-                <a href="#">
-                  <img src="./images/footer/logo.png" alt="logo" />
+                <a href="index.html">
+                  <img
+                    src="./images/footer/logo.png"
+                    alt="logo"
+                    width="254px"
+                  />
                 </a>
               </div>
             </div>
@@ -219,7 +290,7 @@
       </footer>
     </main>
     <script src="./js/web_scroll_toggle.js"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script src="./js/kakaplog.js"></script>
+    <!-- sub_timetable_Style -->
+    <script src="./js/clickbutton.js"></script>
   </body>
 </html>

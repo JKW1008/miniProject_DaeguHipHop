@@ -1,7 +1,18 @@
+header {
+  position: inherit;
+  background-color: black;
+}
+
 #sub_festival_map {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   padding: 10% 5%;
+  margin-top: 16%;
+}
+.sub_wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
 }
 #festival_title_wrapper {
   width: 100%;
@@ -16,9 +27,17 @@
 #festival_map_wrapper img {
   width: 100%;
 }
+@media screen and (min-width: 510px) {
+  #sub_festival_map {
+    margin-top: 8%;
+  }
+}
 @media screen and (min-width: 768px) {
   #festival_title_wrapper img {
     width: 55%;
+  }
+  #sub_festival_map {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
