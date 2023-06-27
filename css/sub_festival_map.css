@@ -1,0 +1,36 @@
+#sub_festival_map {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 10% 5%;
+}
+#festival_title_wrapper {
+  width: 100%;
+}
+#festival_title_wrapper img {
+  width: 70%;
+}
+#festival_map_wrapper {
+  width: 100%;
+  margin-top: 10%;
+}
+#festival_map_wrapper img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #festival_title_wrapper img {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #festival_title_wrapper img {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #sub_festival_map {
+    padding: 10% 0;
+  }
+  #festival_title_wrapper img {
+    width: 49%;
+  }
+}

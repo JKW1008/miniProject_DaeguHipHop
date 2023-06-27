@@ -1,9 +1,13 @@
+header {
+  position: inherit;
+}
+
 #loginformouterWrap {
   width: 100vw;
   height: 100vh;
   display: flex;
 }
-#loginformouterWrap div {
+#loginformouterWrap div:not(#kakao) {
   margin: auto;
   width: 300px;
   border-radius: 5px;
@@ -32,4 +36,10 @@ a {
   text-decoration: none;
   color: #9b9b9b;
   font-size: 12px;
+}
+#kakao {
+  margin-top: 24px;
+}
+a img {
+  width: 100%;
 }

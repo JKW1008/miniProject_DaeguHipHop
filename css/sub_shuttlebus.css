@@ -1,0 +1,52 @@
+#sub_shuttle_bus {
+  background-color: black;
+  padding: 10% 5%;
+}
+
+#sub_shuttle_bus h2 {
+  font-size: 1.4em;
+  font-weight: 900;
+  color: #fecd10;
+  margin: 0;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+#sub_shuttle_bus img {
+  width: 100%;
+}
+#busText {
+  margin-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid gray;
+  color: white;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 0.8em;
+}
+@media screen and (min-width: 768px) {
+  #sub_shuttle_bus h2 {
+    font-size: 2em;
+  }
+  #busText {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #sub_shuttle_bus h2 {
+    font-size: 2.4em;
+  }
+  #busText {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #sub_shuttle_bus {
+    padding: 10% 0;
+  }
+  #busText {
+    font-size: 2em;
+  }
+}

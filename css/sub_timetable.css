@@ -1,0 +1,75 @@
+#sub_timetable {
+  padding: 10% 5%;
+  background-color: #000;
+}
+
+#sub_timetable .timetable_img {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#sub_timetable .timetable_img img {
+  width: 55%;
+}
+
+#buttonWrap button {
+  margin-right: 5%;
+  font-size: 1.6em;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+#sub_timetable .button:active {
+  background-color: #1b1b19;
+  color: #fecf00;
+  font-weight: 600;
+}
+#content1 {
+  padding-top: 10%;
+}
+#content2 {
+  padding-top: 10%;
+}
+#content1 img {
+  width: 100%;
+}
+#content2 img {
+  width: 100%;
+}
+#menual {
+  margin-top: 5%;
+  color: #ccc;
+  font-size: 0.3em;
+}
+#menual ul li {
+  display: inherit;
+  margin-bottom: 1%;
+}
+@media screen and (min-width: 768px) {
+  #buttonWrap button {
+    font-size: 2em;
+  }
+  #menual {
+    font-size: 0.8em;
+  }
+  #sub_timetable .timetable_img img {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #sub_timetable .timetable_img img {
+    width: 40%;
+  }
+  #buttonWrap button {
+    font-size: 3em;
+  }
+  #menual {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #sub_timetable {
+    padding: 10% 0;
+  }
+}
