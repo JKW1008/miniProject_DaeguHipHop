@@ -1,26 +1,13 @@
 header {
-  background: #000;
+  background-color: transparent;
 }
 
-header #header_Container {
-  width: 100%;
-  backdrop-filter: blur(2px);
-}
-header #header_ImageContainer {
-  position: fixed;
-  width: 100%;
-  background-color: #000;
-  top: 0;
-  z-index: 5;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.4s ease;
-}
 header #header_Container nav {
   display: none;
 }
 header #pc_ImageContainer {
   display: none;
+  background-color: transparent;
 }
 header #header_ImageContainer {
   display: flex;
@@ -147,11 +134,12 @@ video {
   }
   header {
     width: 100%;
-    background-color: inherit;
     position: absolute;
     display: flex;
     justify-content: center;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
   }
 
   header #header_Container nav {
