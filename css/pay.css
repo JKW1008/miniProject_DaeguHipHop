@@ -110,6 +110,7 @@ input[type="radio"]:checked:nth-of-type(3) ~ label:nth-of-type(3) p {
     width: 70%;
     justify-content: space-between;
     align-items: flex-end;
+    font-size: 1.5em;
   }
   #payButton {
     margin-top: 0;
@@ -117,6 +118,12 @@ input[type="radio"]:checked:nth-of-type(3) ~ label:nth-of-type(3) p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+  #payButton button {
+    width: 120px;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
   }
   #payButton button:after {
     position: absolute;
@@ -145,9 +152,9 @@ input[type="radio"]:checked:nth-of-type(3) ~ label:nth-of-type(3) p {
   #payButton button:active {
     top: 2px;
   }
+  #gotoPay {
+    padding: 0.5% 5%;
+  }
 }
 @media screen and (min-width: 1440px) {
-  #gotoPay {
-    padding: 2% 0;
-  }
 }
