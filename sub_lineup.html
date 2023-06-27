@@ -46,10 +46,13 @@
             </ul>
             <ul>
               <li>
-                <a href="#">SIGN IN</a>
+                <a href="index.html" target="_blank">HOME</a>
               </li>
               <li>
-                <a href="#">SIGN UP</a>
+                <a href="login.html">SIGN IN</a>
+              </li>
+              <li>
+                <a href="login.html">SIGN UP</a>
               </li>
             </ul>
           </nav>
@@ -99,6 +102,9 @@
           <div class="sidebar">
             <ul>
               <li>
+                <a href="index.html">HOME</a>
+              </li>
+              <li>
                 <a href="https://www.instagram.com/daeguhiphop" target="_blank"
                   >INSTAGRAM</a
                 >
@@ -123,10 +129,10 @@
                 >
               </li>
               <li>
-                <a href="#">SIGN IN</a>
+                <a href="login.html">SIGN IN</a>
               </li>
               <li>
-                <a href="#">SIGN UP</a>
+                <a href="login.html">SIGN UP</a>
               </li>
               <li>
                 <a href="#sub_lineup">LINE UP</a>
@@ -308,7 +314,7 @@
                 </a>
               </div>
               <div class="footerLogo">
-                <a href="#">
+                <a href="index.html">
                   <img
                     src="./images/footer/logo.png"
                     alt="logo"
@@ -323,31 +329,6 @@
     </main>
     <script src="./js/web_scroll_toggle.js"></script>
     <!-- sub_timetable_Style -->
-    <script>
-      function toggleButton(button) {
-        if (button === 1) {
-          document.getElementById("button1").style.color = "#FECF00";
-          document.getElementById("button2").style.color = "#fff";
-          document.getElementById("button1").style.textDecoration = "underline";
-          document.getElementById("button1").style.textUnderlinePosition =
-            "under";
-          document.getElementById("button2").style.textDecoration = "none";
-
-          document.getElementById("content1").style.display = "block";
-          document.getElementById("content2").style.display = "none";
-        } else if (button === 2) {
-          document.getElementById("button1").style.color = "#fff";
-          document.getElementById("button2").style.color = "#FECF00";
-          document.getElementById("button2").style.textDecoration = "underline";
-          document.getElementById("button2").style.textUnderlinePosition =
-            "under";
-
-          document.getElementById("button1").style.textDecoration = "none";
-
-          document.getElementById("content1").style.display = "none";
-          document.getElementById("content2").style.display = "block";
-        }
-      }
-    </script>
+    <script src="./js/clickbutton.js"></script>
   </body>
 </html>

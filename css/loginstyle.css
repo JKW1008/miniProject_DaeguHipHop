@@ -3,9 +3,10 @@ header {
 }
 
 #loginformouterWrap {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
+  padding: 10% 0;
 }
 #loginformouterWrap div:not(#kakao) {
   margin: auto;
@@ -22,6 +23,7 @@ input {
   box-sizing: border-box;
   border-radius: 5px;
   border: none;
+  font-size: 1em;
 }
 .in {
   margin-bottom: 20px;
@@ -30,16 +32,24 @@ input {
 #btn {
   background-color: #fecd10;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
   color: #9b9b9b;
-  font-size: 12px;
 }
 #kakao {
   margin-top: 24px;
 }
-a img {
+#kakao a img {
   width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  #loginformouterWrap div:not(#kakao) {
+    width: 400px;
+  }
+  input {
+    height: 60px;
+  }
 }

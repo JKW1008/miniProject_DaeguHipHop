@@ -48,6 +48,10 @@ header {
   text-align: center;
   line-height: 1.8;
 }
+#button1 {
+  text-decoration: underline;
+  text-underline-position: under;
+}
 @media screen and (min-width: 480px) {
   #sub_lineup .sub_wrapper {
     margin-top: 15%;
@@ -75,7 +79,7 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
-  headeR {
+  header {
     padding: 0 5%;
   }
   #sub_lineup .sub_wrapper {
