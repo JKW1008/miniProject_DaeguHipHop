@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico/logo_ROK_icon.ico" />
+
     <title>대구힙합페스티벌</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -11,6 +13,15 @@
     <link rel="stylesheet" href="./css/loginHeader.css" />
     <link rel="stylesheet" href="./css/loginFooter.css" />
     <link rel="stylesheet" href="./css/loginstyle.css" />
+    <script
+      type="text/javascript"
+      src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+      charset="utf-8"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
   </head>
   <body>
     <main>
@@ -157,10 +168,11 @@
             </a>
           </form>
           <a href="#">비밀번호를 잊어버리셨나요?</a>
-          <div id="kakao">
+          <div id="kakao" class="log">
             <a href="javascript:kakaoLogin();"
               ><img src="./images/login/kakao_login.png"
             /></a>
+            <div id="naver_id_login" class="log"></div>
           </div>
         </div>
       </div>
@@ -222,5 +234,10 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script src="./js/kakaplog.js"></script>
     <script src="./js/subalert.js"></script>
+    <script
+      src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js"
+      charset="utf-8"
+    ></script>
+    <script type="text/javascript" src="./js/naverlog.js"></script>
   </body>
 </html>
