@@ -22,14 +22,14 @@
   color: white;
   text-align: center;
   line-height: 1.7;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 @media screen and (min-width: 768px) {
   #sub_shuttle_bus h2 {
     font-size: 2em;
   }
   #busText {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
@@ -38,7 +38,7 @@
     font-size: 2.4em;
   }
   #busText {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
 }
 
@@ -47,6 +47,6 @@
     padding: 10% 0;
   }
   #busText {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
