@@ -11,17 +11,17 @@ const headerImageContainer = document.getElementById("header_ImageContainer");
 
 const headerObserver = new IntersectionObserver(
   (entries) => {
-    const windowWidth = getWindowWidth(); // 창 너비를 동적으로 확인
+    const windowWidth = getWindowWidth();
 
     entries.forEach((entry) => {
       if (windowWidth >= 1024) {
         if (entry.isIntersecting) {
-          headerImageContainer.style.top = "-300px"; // 상단에 고정
+          headerImageContainer.style.top = "-300px";
         } else {
-          headerImageContainer.style.top = "0"; // 상단에 고정
+          headerImageContainer.style.top = "0";
         }
       } else {
-        headerImageContainer.style.top = "0"; // 상단에 고정
+        headerImageContainer.style.top = "0";
       }
     });
   },
