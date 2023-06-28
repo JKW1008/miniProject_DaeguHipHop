@@ -115,15 +115,19 @@ input[id="menuicon"]:checked + label + div {
   justify-content: start;
   padding-top: 48px;
 }
+.sidebar ul {
+  width: 100%;
+  margin: 5%;
+}
 .sidebar ul li {
   display: block;
-  padding: 10px 30px;
-  margin-bottom: 24px;
-  width: 100%;
+  border-bottom: 1px solid #ff9a03;
+  margin-top: 5%;
+  padding-bottom: 5%;
 }
 .sidebar ul li a {
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 video {
@@ -230,21 +234,26 @@ video {
   header #pc_ImageContainer img {
     width: 12%;
   }
+  .sidebar ul li {
+    padding-bottom: 0;
+  }
   .sidebar ul li:hover {
     scale: 1.1;
   }
   .sidebar ul li a:hover {
     color: #fff;
   }
-  .sidebar ul li a:after {
+  .sidebar ul li:after {
+    box-sizing: content-box;
     display: block;
     content: "";
-    border-bottom: solid 3px white;
+    padding-bottom: 12px;
+    border-bottom: solid 2px white;
     transform: scaleX(0);
     transition: transform 0.4s ease-in-out;
     transform-origin: 0% 50%;
   }
-  .sidebar ul li a:hover:after {
+  .sidebar ul li:hover:after {
     transform: scaleX(1);
   }
 }
