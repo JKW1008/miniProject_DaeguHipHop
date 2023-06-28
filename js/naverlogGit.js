@@ -1,10 +1,10 @@
 var naver_id_login = new naver_id_login(
-  "EwTa7LEpqWW0dFhNVFVy",
-  "http://127.0.0.1:5500/index.html"
+  "i_85GS472pQkT2fBOP2a",
+  "https://jkw1008.github.io/miniProject_DaeguHipHop/index.html"
 );
 var state = naver_id_login.getUniqState();
 naver_id_login.setButton("green", 4, 60);
-naver_id_login.setDomain("http://127.0.0.1:5500");
+naver_id_login.setDomain("https://www.jkw1008.github.io");
 naver_id_login.setState(state);
 naver_id_login.setPopup(true);
 naver_id_login.init_naver_id_login();
