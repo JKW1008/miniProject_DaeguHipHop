@@ -30,17 +30,18 @@ const pic = [
   "./images/sns/29.jpg",
   "./images/sns/30.jpg",
 ];
-
+// 이미지 배열 생성
 const insta = document.querySelector(".instagram_contents");
 const showMoreButton = document.getElementById("showMoreButton");
-
+// Html 요소 호출
 const festivalInstagramLink = "https://www.instagram.com/daeguhiphop/"; // 대구힙합페스티벌의 인스타그램 링크
-
-let currentIndex = 0;
-let itemsPerPage = 4;
+// instagram 링크를 변수로 정의
+let currentIndex = 0; // 변수 생성
+let itemsPerPage = 4; // 이미지 갯수 생성
 
 function showItems() {
   const endIndex = Math.min(currentIndex + itemsPerPage, pic.length);
+  // 현재 보여지는 페이지, 그리고 배열의 길이를 나타낸 변수
   for (let i = currentIndex; i < endIndex; i++) {
     const div = document.createElement("div");
     const img = document.createElement("img");
@@ -53,6 +54,7 @@ function showItems() {
     insta.appendChild(div);
   }
   currentIndex += itemsPerPage;
+  // 배열의 길이 만큼 html로 보내주는 함수
 
   // 모든 이미지를 로드한 경우, 더 이상 버튼을 표시하지 않습니다
   if (currentIndex >= pic.length) {
@@ -73,15 +75,15 @@ function adjustItemsPerPage() {
     itemsPerPage = 6;
   }
 }
-
+// 해상도에 따른 이미지의 갯수
 showMoreButton.addEventListener("click", () => {
   showItems();
 });
-
+// 클릭 이벤트 발생
 window.addEventListener("resize", () => {
   adjustItemsPerPage();
 });
-
+// 리사이즈 이미지 발생
 // 초기에 이미지를 표시합니다
 adjustItemsPerPage();
 showItems();

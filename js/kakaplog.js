@@ -1,4 +1,3 @@
-//JavaScript 키 : 56d51771a4a9d45bce2747686afe4f96
 window.Kakao.init("2975eed1ac3f6c9af2d1ec5ba7a1b85b"); // API Key 입력
 
 function kakaoLogin() {
