@@ -29,6 +29,7 @@ header {
   width: 100%;
   display: flex;
   align-items: flex-start;
+  margin-top: 20%;
   margin-bottom: 10%;
 }
 .date h2 {
@@ -70,6 +71,9 @@ header {
   #lineUplogo img {
     width: 40%;
   }
+  .date {
+    margin-top: 15%;
+  }
 }
 @media screen and (min-width: 960px) {
   .date h2 {
@@ -89,6 +93,9 @@ header {
   }
   #lineUplogo img {
     width: 30%;
+  }
+  .date {
+    margin-top: 10%;
   }
 }
 @media screen and (min-width: 1280px) {

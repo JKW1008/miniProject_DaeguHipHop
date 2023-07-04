@@ -130,6 +130,22 @@ input[id="menuicon"]:checked + label + div {
   font-size: 1.3em;
   font-weight: bold;
 }
+.sidebar li.open > ul {
+  display: none;
+}
+
+.sidebar li.open > ul {
+  display: block;
+}
+
+.sidebar li ul {
+  padding-left: 10px;
+  display: none;
+}
+
+.sidebar li ul li a {
+  display: block;
+}
 video {
   display: none;
 }
@@ -237,9 +253,7 @@ video {
   .sidebar ul li {
     padding-bottom: 0;
   }
-  .sidebar ul li:hover {
-    scale: 1.1;
-  }
+
   .sidebar ul li a:hover {
     color: #fff;
   }
@@ -255,6 +269,9 @@ video {
   }
   .sidebar ul li:hover:after {
     transform: scaleX(1);
+  }
+  .sidebar li.open:hover > ul {
+    display: block;
   }
 }
 @media screen and (max-width: 1025px) {

@@ -104,22 +104,42 @@
           <!-- toggle_menu -->
           <div class="sidebar">
             <ul>
-              <li>
-                <a href="https://www.instagram.com/daeguhiphop" target="_blank"
-                  >INSTAGRAM</a
-                >
+              <li class="open">
+                <a><span>SNS</span></a>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/daeguhiphop"
+                      target="_blank"
+                      >INSTAGRAM</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@daeguhiphop"
+                      target="_blank"
+                      >YOUTUBE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/daeguro/?locale=ko_KR"
+                      target="_blank"
+                      >FACEBOOK</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="https://www.youtube.com/@daeguhiphop" target="_blank"
-                  >YOUTUBE</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/daeguro/?locale=ko_KR"
-                  target="_blank"
-                  >FACEBOOK</a
-                >
+              <li class="open">
+                <a>Log In</a>
+                <ul>
+                  <li>
+                    <a href="./login.html">SIGN IN</a>
+                  </li>
+                  <li>
+                    <a href="login.html">SIGN UP</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a
@@ -127,12 +147,6 @@
                   target="_blank"
                   >STORE</a
                 >
-              </li>
-              <li>
-                <a href="./login.html">SIGN IN</a>
-              </li>
-              <li>
-                <a href="login.html">SIGN UP</a>
               </li>
               <li class="alertbtn">
                 <a href="#">TICKETS</a>
@@ -237,6 +251,10 @@
               <img src="./images/map/placeholder.png" alt="" />
               <p>지번 : 대구광역시 수성구 대흥동 산3</p>
             </div>
+            <div class="pointer">
+              <img src="./images/map/placeholder.png" alt="" />
+              <p>대구 스타디움 내 보조경기장</p>
+            </div>
           </div>
           <div class="button_wrap">
             <a href="information.html">
@@ -338,6 +356,7 @@
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d1c120272607911068ab33e6b86cf33d"
       ></script>
       <script src="./js/KakaoMap.js"></script>
+      <script src="./js/accordion.js"></script>
     </main>
   </body>
 </html>
