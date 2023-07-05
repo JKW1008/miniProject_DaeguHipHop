@@ -6,6 +6,12 @@
     <meta id="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./favicon.ico/logo_ROK_icon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <title>대구힙합페스티벌</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -14,6 +20,9 @@
     <link rel="stylesheet" href="./css/map.css" />
     <link rel="stylesheet" href="./css/pay.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/scrollAni.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/arcodon.css" />
   </head>
   <body>
     <main>
@@ -93,7 +102,6 @@
               id="toggleLogo"
             />
           </a>
-
           <!-- toggle -->
           <input type="checkbox" id="menuicon" />
           <label for="menuicon" id="toggle">
@@ -103,44 +111,39 @@
           </label>
           <!-- toggle_menu -->
           <div class="sidebar">
+            <input type="radio" name="sideaccordion" id="sideSns" />
+            <label for="sideSns" class="sideinner">SNS</label>
             <ul>
-              <li class="open">
-                <a><span>SNS</span></a>
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/daeguhiphop"
-                      target="_blank"
-                      >INSTAGRAM</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.youtube.com/@daeguhiphop"
-                      target="_blank"
-                      >YOUTUBE</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/daeguro/?locale=ko_KR"
-                      target="_blank"
-                      >FACEBOOK</a
-                    >
-                  </li>
-                </ul>
+              <li>
+                <a href="https://www.instagram.com/daeguhiphop" target="_blank"
+                  >INSTAGRAM</a
+                >
               </li>
-              <li class="open">
-                <a>Log In</a>
-                <ul>
-                  <li>
-                    <a href="./login.html">SIGN IN</a>
-                  </li>
-                  <li>
-                    <a href="login.html">SIGN UP</a>
-                  </li>
-                </ul>
+              <li>
+                <a href="https://www.youtube.com/@daeguhiphop" target="_blank"
+                  >YOUTUBE</a
+                >
               </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/daeguro/?locale=ko_KR"
+                  target="_blank"
+                  >FACEBOOK</a
+                >
+              </li>
+            </ul>
+            <input type="radio" name="sideaccordion" id="LOGINBOX" />
+            <label for="LOGINBOX" class="sideinner">LOG IN</label>
+            <ul>
+              <li>
+                <a href="./login.html">SIGN IN</a>
+              </li>
+              <li>
+                <a href="login.html">SIGN UP</a>
+              </li>
+            </ul>
+
+            <ul>
               <li>
                 <a
                   href="https://smartstore.naver.com/daeguhiphop"
@@ -164,12 +167,49 @@
           </div>
         </div>
       </header>
-      <video
-        src="./video/header_background_video.mp4"
-        loop
-        autoplay
-        muted
-      ></video>
+      <a class="scroll-down">
+        <div class="scroll">
+          <span class="scroll-dot"></span>
+        </div>
+        <div class="arrow-down"></div>
+      </a>
+      <video src="./video/header_background_video.mp4" loop autoplay muted>
+        <a class="scroll-down">
+          <div class="scroll">
+            <span class="scroll-dot"></span>
+          </div>
+          <div class="arrow-down"></div>
+        </a>
+      </video>
+      <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/swiper/1.jpeg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper/2.jpeg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper/3.jpeg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper/4.jpeg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper/5.jpeg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper/6.jpeg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper/7.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       <div id="artist">
         <div class="title_image">
           <img src="images/titles/artist.png" />
@@ -269,16 +309,16 @@
             <input type="radio" name="day" id="firstday" value="1" />
             <input type="radio" name="day" id="secondday" value="2" />
             <input type="radio" name="day" id="everyday" value="3" checked />
-            <label for="firstday"
+            <label for="firstday" class="payday"
               >23.05.06
               <br />
               <p>(69,000₩)</p></label
             >
-            <label for="secondday"
+            <label for="secondday" class="payday"
               >23.05.07<br />
               <p>(69,000₩)</p></label
             >
-            <label for="everyday"
+            <label for="everyday" class="payday"
               >ALL<br />
               <p>(130,000₩)</p></label
             >
@@ -357,6 +397,7 @@
       ></script>
       <script src="./js/KakaoMap.js"></script>
       <script src="./js/accordion.js"></script>
+      <script src="./js/swiper.js"></script>
     </main>
   </body>
 </html>

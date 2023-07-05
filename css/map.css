@@ -29,6 +29,7 @@
 #Map_outerWrap #Map_innerWrap #id .pointer {
   display: flex;
   align-items: center;
+  padding-top: 1%;
 }
 #Map_outerWrap #Map_innerWrap #id .pointer p {
   font-size: 1em;

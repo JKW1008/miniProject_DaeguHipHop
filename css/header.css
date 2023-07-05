@@ -110,58 +110,24 @@ div[class="sidebar"]::-webkit-scrollbar {
 input[id="menuicon"]:checked + label + div {
   right: 0;
 }
-.sidebar {
-  display: flex;
-  justify-content: start;
-  padding-top: 48px;
-}
-.sidebar ul {
-  width: 100%;
-  margin: 5%;
-}
-.sidebar ul li {
-  display: block;
-  border-bottom: 1px solid #ff9a03;
-  margin-top: 5%;
-  padding-bottom: 5%;
-}
-.sidebar ul li a {
-  color: #000;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-.sidebar li.open > ul {
-  display: none;
-}
 
-.sidebar li.open > ul {
-  display: block;
-}
-
-.sidebar li ul {
-  padding-left: 10px;
-  display: none;
-}
-
-.sidebar li ul li a {
-  display: block;
-}
 video {
   display: none;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   div[class="sidebar"] {
     width: 40%;
   }
   video {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
     display: block;
   }
 }
 @media screen and (min-width: 1024px) {
-  video {
-    width: 100%;
-  }
   main {
     position: relative;
   }
@@ -249,29 +215,6 @@ video {
   }
   header #pc_ImageContainer img {
     width: 12%;
-  }
-  .sidebar ul li {
-    padding-bottom: 0;
-  }
-
-  .sidebar ul li a:hover {
-    color: #fff;
-  }
-  .sidebar ul li:after {
-    box-sizing: content-box;
-    display: block;
-    content: "";
-    padding-bottom: 12px;
-    border-bottom: solid 2px white;
-    transform: scaleX(0);
-    transition: transform 0.4s ease-in-out;
-    transform-origin: 0% 50%;
-  }
-  .sidebar ul li:hover:after {
-    transform: scaleX(1);
-  }
-  .sidebar li.open:hover > ul {
-    display: block;
   }
 }
 @media screen and (max-width: 1025px) {

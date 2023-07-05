@@ -1,0 +1,85 @@
+a {
+  text-decoration: none;
+}
+.sidebar {
+  padding: 20% 5%;
+}
+
+.sidebar ul li,
+.sideinner {
+  display: inline-block;
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.sidebar .sideinner {
+  border-bottom: 1px solid #ff9a03;
+  padding-bottom: 2%;
+  cursor: pointer;
+  font-weight: 900;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar ul li a {
+  color: black;
+}
+.sidebar ul li {
+  border-bottom: 1px solid #ff9a03;
+  padding-bottom: 2%;
+}
+.sidebar input {
+  display: none;
+}
+.sidebar input[id*="sideSns"] + .sideinner + ul {
+  max-height: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  padding-left: 10%;
+}
+
+.sidebar input[id*="sideSns"]:checked + .sideinner + ul {
+  max-height: 100%;
+}
+.sidebar input[id*="LOGINBOX"] + .sideinner + ul {
+  max-height: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  padding-left: 10%;
+}
+.sidebar input[id*="LOGINBOX"]:checked + .sideinner + ul {
+  max-height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    padding: 5% 2%;
+  }
+  .sidebar .sideinner:hover {
+    scale: 1.1;
+    color: white;
+    border-bottom: 3px solid white;
+    transition: all 0.4s ease;
+  }
+  #sideSns:checked + label {
+    scale: 1.1;
+    color: white;
+    border-bottom: 3px solid white;
+    transition: all 0.4s ease;
+  }
+  #LOGINBOX:checked + label {
+    scale: 1.1;
+    color: white;
+    border-bottom: 3px solid white;
+    transition: all 0.4s ease;
+  }
+  .sidebar > ul li:hover {
+    scale: 1.1;
+    border-bottom: 3px solid white;
+    transition: all 0.4s ease;
+  }
+  .sidebar > ul li:hover a {
+    color: white;
+  }
+}
